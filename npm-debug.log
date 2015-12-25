@@ -1,0 +1,448 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'lcd-pcf8574' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 warn package.json lcd@1.0.0 No description
+5 warn package.json lcd@1.0.0 No repository field.
+6 warn package.json lcd@1.0.0 No README data
+7 silly cache add args [ 'lcd-pcf8574', null ]
+8 verbose cache add spec lcd-pcf8574
+9 silly cache add parsed spec { raw: 'lcd-pcf8574',
+9 silly cache add   scope: null,
+9 silly cache add   name: 'lcd-pcf8574',
+9 silly cache add   rawSpec: '',
+9 silly cache add   spec: '*',
+9 silly cache add   type: 'range' }
+10 verbose addNamed lcd-pcf8574@*
+11 silly addNamed semver.valid null
+12 silly addNamed semver.validRange *
+13 silly addNameRange { name: 'lcd-pcf8574', range: '*', hasData: false }
+14 silly mapToRegistry name lcd-pcf8574
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/lcd-pcf8574
+18 verbose addNameRange registry:https://registry.npmjs.org/lcd-pcf8574 not in flight; fetching
+19 verbose request uri https://registry.npmjs.org/lcd-pcf8574
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 15:39:04
+22 verbose request id b1a691136f72fc34
+23 verbose etag "4Z2XCITVU6PE6DHTJV1SC063M"
+24 http request GET https://registry.npmjs.org/lcd-pcf8574
+25 http 304 https://registry.npmjs.org/lcd-pcf8574
+26 silly get cb [ 304,
+26 silly get   { date: 'Fri, 25 Dec 2015 15:39:05 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     'cache-control': 'max-age=300',
+26 silly get     etag: '"4Z2XCITVU6PE6DHTJV1SC063M"',
+26 silly get     age: '0',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-lhr6325-LHR',
+26 silly get     'x-cache': 'MISS',
+26 silly get     'x-cache-hits': '0',
+26 silly get     'x-timer': 'S1451057945.520390,VS0,VE670',
+26 silly get     vary: 'Accept' } ]
+27 verbose etag https://registry.npmjs.org/lcd-pcf8574 from cache
+28 verbose get saving lcd-pcf8574 to /home/pi/.npm/registry.npmjs.org/lcd-pcf8574/.cache.json
+29 silly addNameRange number 2 { name: 'lcd-pcf8574', range: '*', hasData: true }
+30 silly addNameRange versions [ 'lcd-pcf8574', [ '1.0.1', '1.0.2', '1.0.3', '2.0.0' ] ]
+31 verbose addNamed lcd-pcf8574@2.0.0
+32 silly addNamed semver.valid 2.0.0
+33 silly addNamed semver.validRange 2.0.0
+34 silly cache afterAdd lcd-pcf8574@2.0.0
+35 verbose afterAdd /home/pi/.npm/lcd-pcf8574/2.0.0/package/package.json not in flight; writing
+36 verbose afterAdd /home/pi/.npm/lcd-pcf8574/2.0.0/package/package.json written
+37 silly install resolved [ { name: 'lcd-pcf8574',
+37 silly install resolved     version: '2.0.0',
+37 silly install resolved     description: 'LCD i2c module using PCF8574P',
+37 silly install resolved     main: 'index.js',
+37 silly install resolved     scripts: { test: 'test.js' },
+37 silly install resolved     repository:
+37 silly install resolved      { type: 'git',
+37 silly install resolved        url: 'git://github.com/wilberforce/lcd-pcf8574.git' },
+37 silly install resolved     dependencies: { i2c: '*', sleep: '~1.1.4' },
+37 silly install resolved     keywords:
+37 silly install resolved      [ 'PCF8574P',
+37 silly install resolved        'GPIO 8 way expander',
+37 silly install resolved        'LCD HD44780',
+37 silly install resolved        'nodejs',
+37 silly install resolved        'raspberry pi' ],
+37 silly install resolved     author: { name: 'Rhys Williams' },
+37 silly install resolved     license: 'BSD',
+37 silly install resolved     bugs: { url: 'https://github.com/wilberforce/lcd-pcf8574/issues' },
+37 silly install resolved     homepage: 'https://github.com/wilberforce/lcd-pcf8574',
+37 silly install resolved     _id: 'lcd-pcf8574@2.0.0',
+37 silly install resolved     _from: 'lcd-pcf8574@*',
+37 silly install resolved     gitHead: '5b7175265c02ab0420ce04485477040db9afbe1d',
+37 silly install resolved     _shasum: '09e65d1993bd49409384c9727f1adb977ebf3870',
+37 silly install resolved     _npmVersion: '2.10.1',
+37 silly install resolved     _nodeVersion: '0.12.4',
+37 silly install resolved     _npmUser: { name: 'wilberforce', email: 'github@wilberforce.co.nz' },
+37 silly install resolved     dist:
+37 silly install resolved      { shasum: '09e65d1993bd49409384c9727f1adb977ebf3870',
+37 silly install resolved        tarball: 'http://registry.npmjs.org/lcd-pcf8574/-/lcd-pcf8574-2.0.0.tgz' },
+37 silly install resolved     maintainers: [ [Object] ],
+37 silly install resolved     directories: {},
+37 silly install resolved     _resolved: 'https://registry.npmjs.org/lcd-pcf8574/-/lcd-pcf8574-2.0.0.tgz',
+37 silly install resolved     readme: 'ERROR: No README data found!' } ]
+38 info install lcd-pcf8574@2.0.0 into /home/pi/nodejs/lcd
+39 info installOne lcd-pcf8574@2.0.0
+40 verbose installOne of lcd-pcf8574 to /home/pi/nodejs/lcd not in flight; installing
+41 verbose lock using /home/pi/.npm/_locks/lcd-pcf8574-dfd52d1d316d54fb.lock for /home/pi/nodejs/lcd/node_modules/lcd-pcf8574
+42 silly install write writing lcd-pcf8574 2.0.0 to /home/pi/nodejs/lcd/node_modules/lcd-pcf8574
+43 silly cache addNamed cb lcd-pcf8574@2.0.0
+44 verbose unbuild node_modules/lcd-pcf8574
+45 silly gentlyRm /home/pi/nodejs/lcd/node_modules/lcd-pcf8574 is being purged from base /home/pi/nodejs/lcd
+46 verbose gentlyRm don't care about contents; nuking /home/pi/nodejs/lcd/node_modules/lcd-pcf8574
+47 verbose tar unpack /home/pi/.npm/lcd-pcf8574/2.0.0/package.tgz
+48 verbose tar unpacking to /home/pi/nodejs/lcd/node_modules/lcd-pcf8574
+49 silly gentlyRm /home/pi/nodejs/lcd/node_modules/lcd-pcf8574 is being purged
+50 verbose gentlyRm don't care about contents; nuking /home/pi/nodejs/lcd/node_modules/lcd-pcf8574
+51 silly gunzTarPerm modes [ '755', '644' ]
+52 silly gunzTarPerm extractEntry package.json
+53 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+54 silly gunzTarPerm extractEntry README.md
+55 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+56 silly gunzTarPerm extractEntry index.js
+57 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+58 silly gunzTarPerm extractEntry test.js
+59 silly gunzTarPerm modified mode [ 'test.js', 438, 420 ]
+60 info preinstall lcd-pcf8574@2.0.0
+61 silly prepareForInstallMany adding sleep@~1.1.4 from lcd-pcf8574 dependencies
+62 silly cache add args [ 'sleep@~1.1.4', null ]
+63 verbose cache add spec sleep@~1.1.4
+64 silly cache add parsed spec { raw: 'sleep@~1.1.4',
+64 silly cache add   scope: null,
+64 silly cache add   name: 'sleep',
+64 silly cache add   rawSpec: '~1.1.4',
+64 silly cache add   spec: '>=1.1.4 <1.2.0',
+64 silly cache add   type: 'range' }
+65 verbose addNamed sleep@>=1.1.4 <1.2.0
+66 silly addNamed semver.valid null
+67 silly addNamed semver.validRange >=1.1.4 <1.2.0
+68 silly addNameRange { name: 'sleep', range: '>=1.1.4 <1.2.0', hasData: false }
+69 silly mapToRegistry name sleep
+70 silly mapToRegistry using default registry
+71 silly mapToRegistry registry https://registry.npmjs.org/
+72 silly mapToRegistry uri https://registry.npmjs.org/sleep
+73 verbose addNameRange registry:https://registry.npmjs.org/sleep not in flight; fetching
+74 verbose request uri https://registry.npmjs.org/sleep
+75 verbose request no auth needed
+76 info attempt registry request try #1 at 15:39:08
+77 verbose etag "6Z12S8T1ZAGKKLWIE8WCF74L7"
+78 http request GET https://registry.npmjs.org/sleep
+79 http 304 https://registry.npmjs.org/sleep
+80 silly get cb [ 304,
+80 silly get   { date: 'Fri, 25 Dec 2015 15:39:08 GMT',
+80 silly get     via: '1.1 varnish',
+80 silly get     'cache-control': 'max-age=300',
+80 silly get     etag: '"6Z12S8T1ZAGKKLWIE8WCF74L7"',
+80 silly get     age: '0',
+80 silly get     connection: 'keep-alive',
+80 silly get     'x-served-by': 'cache-lhr6335-LHR',
+80 silly get     'x-cache': 'MISS',
+80 silly get     'x-cache-hits': '0',
+80 silly get     'x-timer': 'S1451057948.487392,VS0,VE85',
+80 silly get     vary: 'Accept' } ]
+81 verbose etag https://registry.npmjs.org/sleep from cache
+82 verbose get saving sleep to /home/pi/.npm/registry.npmjs.org/sleep/.cache.json
+83 silly addNameRange number 2 { name: 'sleep', range: '>=1.1.4 <1.2.0', hasData: true }
+84 silly addNameRange versions [ 'sleep',
+84 silly addNameRange   [ '1.0.0',
+84 silly addNameRange     '1.0.1',
+84 silly addNameRange     '1.0.2',
+84 silly addNameRange     '1.1.0',
+84 silly addNameRange     '1.1.1',
+84 silly addNameRange     '1.1.2',
+84 silly addNameRange     '1.1.3',
+84 silly addNameRange     '1.1.4',
+84 silly addNameRange     '1.1.5',
+84 silly addNameRange     '1.1.6',
+84 silly addNameRange     '1.1.7',
+84 silly addNameRange     '1.1.8',
+84 silly addNameRange     '1.2.0',
+84 silly addNameRange     '2.0.0',
+84 silly addNameRange     '3.0.0' ] ]
+85 verbose addNamed sleep@1.1.8
+86 silly addNamed semver.valid 1.1.8
+87 silly addNamed semver.validRange 1.1.8
+88 silly cache afterAdd sleep@1.1.8
+89 verbose afterAdd /home/pi/.npm/sleep/1.1.8/package/package.json not in flight; writing
+90 verbose afterAdd /home/pi/.npm/sleep/1.1.8/package/package.json written
+91 silly install resolved [ { name: 'sleep',
+91 silly install resolved     version: '1.1.8',
+91 silly install resolved     main: './lib/index.js',
+91 silly install resolved     description: 'Add sleep() and usleep() to nodejs',
+91 silly install resolved     homepage: 'http://github.com/ErikDubbelboer/node-sleep',
+91 silly install resolved     author: { name: 'Erik Dubbelboer', email: 'erik@dubbelboer.com' },
+91 silly install resolved     engines: { node: '>=0.4.0' },
+91 silly install resolved     keywords: [ 'sleep', 'usleep' ],
+91 silly install resolved     repository:
+91 silly install resolved      { type: 'git',
+91 silly install resolved        url: 'https://github.com/ErikDubbelboer/node-sleep.git' },
+91 silly install resolved     dependencies: { mkdirp: '~0.3.5' },
+91 silly install resolved     scripts: { install: 'node build.js || nodejs build.js' },
+91 silly install resolved     gypfile: true,
+91 silly install resolved     bugs: { url: 'https://github.com/ErikDubbelboer/node-sleep/issues' },
+91 silly install resolved     _id: 'sleep@1.1.8',
+91 silly install resolved     _shasum: '4848862b234cff3352a80263e46f4b2e27ad5b53',
+91 silly install resolved     _from: 'sleep@>=1.1.4 <1.2.0',
+91 silly install resolved     _npmVersion: '1.4.9',
+91 silly install resolved     _npmUser: { name: 'erikdubbelboer', email: 'erik@dubbelboer.com' },
+91 silly install resolved     maintainers: [ [Object] ],
+91 silly install resolved     dist:
+91 silly install resolved      { shasum: '4848862b234cff3352a80263e46f4b2e27ad5b53',
+91 silly install resolved        tarball: 'http://registry.npmjs.org/sleep/-/sleep-1.1.8.tgz' },
+91 silly install resolved     directories: {},
+91 silly install resolved     _resolved: 'https://registry.npmjs.org/sleep/-/sleep-1.1.8.tgz',
+91 silly install resolved     readme: 'ERROR: No README data found!' } ]
+92 info install sleep@1.1.8 into /home/pi/nodejs/lcd/node_modules/lcd-pcf8574
+93 info installOne sleep@1.1.8
+94 verbose installOne of sleep to /home/pi/nodejs/lcd/node_modules/lcd-pcf8574 not in flight; installing
+95 verbose lock using /home/pi/.npm/_locks/sleep-c2b491847f736254.lock for /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep
+96 silly install write writing sleep 1.1.8 to /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep
+97 silly cache addNamed cb sleep@1.1.8
+98 verbose unbuild node_modules/lcd-pcf8574/node_modules/sleep
+99 silly gentlyRm /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep is being purged from base /home/pi/nodejs/lcd
+100 verbose gentlyRm don't care about contents; nuking /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep
+101 verbose tar unpack /home/pi/.npm/sleep/1.1.8/package.tgz
+102 verbose tar unpacking to /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep
+103 silly gentlyRm /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep is being purged
+104 verbose gentlyRm don't care about contents; nuking /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep
+105 silly gunzTarPerm modes [ '755', '644' ]
+106 silly gunzTarPerm extractEntry package.json
+107 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+108 silly gunzTarPerm extractEntry .npmignore
+109 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+110 silly gunzTarPerm extractEntry README.md
+111 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+112 silly gunzTarPerm extractEntry test.js
+113 silly gunzTarPerm modified mode [ 'test.js', 436, 420 ]
+114 silly gunzTarPerm extractEntry build.js
+115 silly gunzTarPerm modified mode [ 'build.js', 436, 420 ]
+116 silly gunzTarPerm extractEntry binding.gyp
+117 silly gunzTarPerm modified mode [ 'binding.gyp', 436, 420 ]
+118 silly gunzTarPerm extractEntry build-util/tools.js
+119 silly gunzTarPerm modified mode [ 'build-util/tools.js', 436, 420 ]
+120 silly gunzTarPerm extractEntry .jshintignore
+121 silly gunzTarPerm modified mode [ '.jshintignore', 436, 420 ]
+122 silly gunzTarPerm extractEntry lib/binary_name.js
+123 silly gunzTarPerm modified mode [ 'lib/binary_name.js', 436, 420 ]
+124 silly gunzTarPerm extractEntry lib/index.js
+125 silly gunzTarPerm modified mode [ 'lib/index.js', 436, 420 ]
+126 silly gunzTarPerm extractEntry .jshintrc
+127 silly gunzTarPerm modified mode [ '.jshintrc', 436, 420 ]
+128 silly gunzTarPerm extractEntry sleep.cc
+129 silly gunzTarPerm modified mode [ 'sleep.cc', 436, 420 ]
+130 info preinstall sleep@1.1.8
+131 silly prepareForInstallMany adding mkdirp@~0.3.5 from sleep dependencies
+132 silly cache add args [ 'mkdirp@~0.3.5', null ]
+133 verbose cache add spec mkdirp@~0.3.5
+134 silly cache add parsed spec { raw: 'mkdirp@~0.3.5',
+134 silly cache add   scope: null,
+134 silly cache add   name: 'mkdirp',
+134 silly cache add   rawSpec: '~0.3.5',
+134 silly cache add   spec: '>=0.3.5 <0.4.0',
+134 silly cache add   type: 'range' }
+135 verbose addNamed mkdirp@>=0.3.5 <0.4.0
+136 silly addNamed semver.valid null
+137 silly addNamed semver.validRange >=0.3.5 <0.4.0
+138 silly addNameRange { name: 'mkdirp', range: '>=0.3.5 <0.4.0', hasData: false }
+139 silly mapToRegistry name mkdirp
+140 silly mapToRegistry using default registry
+141 silly mapToRegistry registry https://registry.npmjs.org/
+142 silly mapToRegistry uri https://registry.npmjs.org/mkdirp
+143 verbose addNameRange registry:https://registry.npmjs.org/mkdirp not in flight; fetching
+144 verbose request uri https://registry.npmjs.org/mkdirp
+145 verbose request no auth needed
+146 info attempt registry request try #1 at 15:39:09
+147 verbose etag "E8Q7AAC67AWF4R8RPE1WOINJB"
+148 http request GET https://registry.npmjs.org/mkdirp
+149 http 304 https://registry.npmjs.org/mkdirp
+150 silly get cb [ 304,
+150 silly get   { date: 'Fri, 25 Dec 2015 15:39:09 GMT',
+150 silly get     via: '1.1 varnish',
+150 silly get     'cache-control': 'max-age=300',
+150 silly get     etag: '"E8Q7AAC67AWF4R8RPE1WOINJB"',
+150 silly get     age: '125',
+150 silly get     connection: 'keep-alive',
+150 silly get     'x-served-by': 'cache-lhr6330-LHR',
+150 silly get     'x-cache': 'HIT',
+150 silly get     'x-cache-hits': '3',
+150 silly get     'x-timer': 'S1451057949.874863,VS0,VE0',
+150 silly get     vary: 'Accept' } ]
+151 verbose etag https://registry.npmjs.org/mkdirp from cache
+152 verbose get saving mkdirp to /home/pi/.npm/registry.npmjs.org/mkdirp/.cache.json
+153 silly addNameRange number 2 { name: 'mkdirp', range: '>=0.3.5 <0.4.0', hasData: true }
+154 silly addNameRange versions [ 'mkdirp',
+154 silly addNameRange   [ '0.0.1',
+154 silly addNameRange     '0.0.2',
+154 silly addNameRange     '0.0.3',
+154 silly addNameRange     '0.0.4',
+154 silly addNameRange     '0.0.5',
+154 silly addNameRange     '0.0.6',
+154 silly addNameRange     '0.0.7',
+154 silly addNameRange     '0.1.0',
+154 silly addNameRange     '0.2.0',
+154 silly addNameRange     '0.2.1',
+154 silly addNameRange     '0.2.2',
+154 silly addNameRange     '0.3.0',
+154 silly addNameRange     '0.3.1',
+154 silly addNameRange     '0.3.2',
+154 silly addNameRange     '0.3.3',
+154 silly addNameRange     '0.3.4',
+154 silly addNameRange     '0.3.5',
+154 silly addNameRange     '0.4.0',
+154 silly addNameRange     '0.4.1',
+154 silly addNameRange     '0.4.2',
+154 silly addNameRange     '0.5.0',
+154 silly addNameRange     '0.5.1' ] ]
+155 verbose addNamed mkdirp@0.3.5
+156 silly addNamed semver.valid 0.3.5
+157 silly addNamed semver.validRange 0.3.5
+158 silly cache afterAdd mkdirp@0.3.5
+159 verbose afterAdd /home/pi/.npm/mkdirp/0.3.5/package/package.json not in flight; writing
+160 verbose afterAdd /home/pi/.npm/mkdirp/0.3.5/package/package.json written
+161 silly install resolved [ { name: 'mkdirp',
+161 silly install resolved     description: 'Recursively mkdir, like `mkdir -p`',
+161 silly install resolved     version: '0.3.5',
+161 silly install resolved     author:
+161 silly install resolved      { name: 'James Halliday',
+161 silly install resolved        email: 'mail@substack.net',
+161 silly install resolved        url: 'http://substack.net' },
+161 silly install resolved     main: './index',
+161 silly install resolved     keywords: [ 'mkdir', 'directory' ],
+161 silly install resolved     repository:
+161 silly install resolved      { type: 'git',
+161 silly install resolved        url: 'http://github.com/substack/node-mkdirp.git' },
+161 silly install resolved     scripts: { test: 'tap test/*.js' },
+161 silly install resolved     devDependencies: { tap: '~0.4.0' },
+161 silly install resolved     license: 'MIT',
+161 silly install resolved     _id: 'mkdirp@0.3.5',
+161 silly install resolved     dist:
+161 silly install resolved      { shasum: 'de3e5f8961c88c787ee1368df849ac4413eca8d7',
+161 silly install resolved        tarball: 'http://registry.npmjs.org/mkdirp/-/mkdirp-0.3.5.tgz' },
+161 silly install resolved     _from: 'mkdirp@>=0.3.5 <0.4.0',
+161 silly install resolved     _npmVersion: '1.2.2',
+161 silly install resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+161 silly install resolved     maintainers: [ [Object] ],
+161 silly install resolved     directories: {},
+161 silly install resolved     _shasum: 'de3e5f8961c88c787ee1368df849ac4413eca8d7',
+161 silly install resolved     _resolved: 'https://registry.npmjs.org/mkdirp/-/mkdirp-0.3.5.tgz',
+161 silly install resolved     bugs: { url: 'https://github.com/substack/node-mkdirp/issues' },
+161 silly install resolved     readme: 'ERROR: No README data found!',
+161 silly install resolved     homepage: 'https://github.com/substack/node-mkdirp' } ]
+162 info install mkdirp@0.3.5 into /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep
+163 info installOne mkdirp@0.3.5
+164 verbose installOne of mkdirp to /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep not in flight; installing
+165 verbose lock using /home/pi/.npm/_locks/mkdirp-badc78b8f6fba92a.lock for /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep/node_modules/mkdirp
+166 silly install write writing mkdirp 0.3.5 to /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep/node_modules/mkdirp
+167 silly cache addNamed cb mkdirp@0.3.5
+168 verbose unbuild node_modules/lcd-pcf8574/node_modules/sleep/node_modules/mkdirp
+169 silly gentlyRm /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep/node_modules/mkdirp is being purged from base /home/pi/nodejs/lcd
+170 verbose gentlyRm don't care about contents; nuking /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep/node_modules/mkdirp
+171 verbose tar unpack /home/pi/.npm/mkdirp/0.3.5/package.tgz
+172 verbose tar unpacking to /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep/node_modules/mkdirp
+173 silly gentlyRm /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep/node_modules/mkdirp is being purged
+174 verbose gentlyRm don't care about contents; nuking /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep/node_modules/mkdirp
+175 silly gunzTarPerm modes [ '755', '644' ]
+176 silly gunzTarPerm extractEntry package.json
+177 silly gunzTarPerm extractEntry .npmignore
+178 silly gunzTarPerm extractEntry LICENSE
+179 silly gunzTarPerm extractEntry index.js
+180 silly gunzTarPerm extractEntry examples/pow.js
+181 silly gunzTarPerm extractEntry readme.markdown
+182 silly gunzTarPerm extractEntry test/perm.js
+183 silly gunzTarPerm extractEntry test/perm_sync.js
+184 silly gunzTarPerm extractEntry test/race.js
+185 silly gunzTarPerm extractEntry test/rel.js
+186 silly gunzTarPerm extractEntry test/return.js
+187 silly gunzTarPerm extractEntry test/clobber.js
+188 silly gunzTarPerm extractEntry test/root.js
+189 silly gunzTarPerm extractEntry test/umask.js
+190 silly gunzTarPerm extractEntry test/sync.js
+191 silly gunzTarPerm extractEntry test/chmod.js
+192 silly gunzTarPerm extractEntry test/umask_sync.js
+193 silly gunzTarPerm extractEntry test/return_sync.js
+194 silly gunzTarPerm extractEntry test/mkdirp.js
+195 silly gunzTarPerm extractEntry .travis.yml
+196 info preinstall mkdirp@0.3.5
+197 silly install resolved []
+198 verbose about to build /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep/node_modules/mkdirp
+199 info build /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep/node_modules/mkdirp
+200 verbose linkStuff [ false,
+200 verbose linkStuff   false,
+200 verbose linkStuff   false,
+200 verbose linkStuff   '/home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep/node_modules' ]
+201 info linkStuff mkdirp@0.3.5
+202 verbose linkBins mkdirp@0.3.5
+203 verbose linkMans mkdirp@0.3.5
+204 verbose rebuildBundles mkdirp@0.3.5
+205 info install mkdirp@0.3.5
+206 info postinstall mkdirp@0.3.5
+207 verbose unlock done using /home/pi/.npm/_locks/mkdirp-badc78b8f6fba92a.lock for /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep/node_modules/mkdirp
+208 verbose about to build /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep
+209 info build /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep
+210 verbose linkStuff [ false,
+210 verbose linkStuff   false,
+210 verbose linkStuff   false,
+210 verbose linkStuff   '/home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules' ]
+211 info linkStuff sleep@1.1.8
+212 verbose linkBins sleep@1.1.8
+213 verbose linkMans sleep@1.1.8
+214 verbose rebuildBundles sleep@1.1.8
+215 verbose rebuildBundles [ 'mkdirp' ]
+216 info install sleep@1.1.8
+217 verbose unsafe-perm in lifecycle true
+218 info sleep@1.1.8 Failed to exec install script
+219 verbose unlock done using /home/pi/.npm/_locks/sleep-c2b491847f736254.lock for /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep
+220 verbose about to build /home/pi/nodejs/lcd/node_modules/lcd-pcf8574
+221 verbose unlock done using /home/pi/.npm/_locks/lcd-pcf8574-dfd52d1d316d54fb.lock for /home/pi/nodejs/lcd/node_modules/lcd-pcf8574
+222 verbose stack Error: sleep@1.1.8 install: `node build.js || nodejs build.js`
+222 verbose stack Exit status 127
+222 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+222 verbose stack     at EventEmitter.emit (events.js:110:17)
+222 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:14:12)
+222 verbose stack     at ChildProcess.emit (events.js:110:17)
+222 verbose stack     at maybeClose (child_process.js:1015:16)
+222 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+223 verbose pkgid sleep@1.1.8
+224 verbose cwd /home/pi/nodejs/lcd
+225 error Linux 3.18.7+
+226 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "lcd-pcf8574"
+227 error node v0.12.2
+228 error npm  v2.7.4
+229 error code ELIFECYCLE
+230 error sleep@1.1.8 install: `node build.js || nodejs build.js`
+230 error Exit status 127
+231 error Failed at the sleep@1.1.8 install script 'node build.js || nodejs build.js'.
+231 error This is most likely a problem with the sleep package,
+231 error not with npm itself.
+231 error Tell the author that this fails on your system:
+231 error     node build.js || nodejs build.js
+231 error You can get their info via:
+231 error     npm owner ls sleep
+231 error There is likely additional logging output above.
+232 verbose exit [ 1, true ]
+233 verbose unbuild node_modules/lcd-pcf8574/node_modules/sleep
+234 info preuninstall sleep@1.1.8
+235 info uninstall sleep@1.1.8
+236 verbose unbuild rmStuff sleep@1.1.8 from /home/pi/nodejs/lcd/node_modules
+237 verbose unbuild rmStuff in /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules
+238 info postuninstall sleep@1.1.8
+239 silly gentlyRm /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep is being purged from base /home/pi/nodejs/lcd
+240 verbose gentlyRm don't care about contents; nuking /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep
+241 silly vacuum-fs purging /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules/sleep
+242 silly vacuum-fs removing /home/pi/nodejs/lcd/node_modules/lcd-pcf8574/node_modules
+243 silly vacuum-fs quitting because other entries in /home/pi/nodejs/lcd/node_modules/lcd-pcf8574
+244 verbose unbuild node_modules/lcd-pcf8574
+245 info preuninstall lcd-pcf8574@2.0.0
+246 info uninstall lcd-pcf8574@2.0.0
+247 verbose unbuild rmStuff lcd-pcf8574@2.0.0 from /home/pi/nodejs/lcd/node_modules
+248 info postuninstall lcd-pcf8574@2.0.0
+249 silly gentlyRm /home/pi/nodejs/lcd/node_modules/lcd-pcf8574 is being purged from base /home/pi/nodejs/lcd
+250 verbose gentlyRm don't care about contents; nuking /home/pi/nodejs/lcd/node_modules/lcd-pcf8574
+251 silly vacuum-fs purging /home/pi/nodejs/lcd/node_modules/lcd-pcf8574
+252 silly vacuum-fs quitting because other entries in /home/pi/nodejs/lcd/node_modules
